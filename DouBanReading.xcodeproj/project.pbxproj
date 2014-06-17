@@ -21,6 +21,9 @@
 		42264B4B1945635A000C6C85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42264B2D1945635A000C6C85 /* UIKit.framework */; };
 		42264B531945635A000C6C85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42264B511945635A000C6C85 /* InfoPlist.strings */; };
 		42264B551945635A000C6C85 /* DouBanReadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42264B541945635A000C6C85 /* DouBanReadingTests.m */; };
+		42264B60194F4BB3000C6C85 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42264B5F194F4BB3000C6C85 /* CoreDataTableViewController.m */; };
+		42264B64194F4C59000C6C85 /* DouBanFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42264B63194F4C59000C6C85 /* DouBanFetcher.m */; };
+		5AF6019021FA42E880CFCD91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E601C9C5C7B743D7821F4A3B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,13 @@
 		42264B501945635A000C6C85 /* DouBanReadingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DouBanReadingTests-Info.plist"; sourceTree = "<group>"; };
 		42264B521945635A000C6C85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42264B541945635A000C6C85 /* DouBanReadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouBanReadingTests.m; sourceTree = "<group>"; };
+		42264B5E194F4BB3000C6C85 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		42264B5F194F4BB3000C6C85 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		42264B62194F4C59000C6C85 /* DouBanFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DouBanFetcher.h; sourceTree = "<group>"; };
+		42264B63194F4C59000C6C85 /* DouBanFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DouBanFetcher.m; sourceTree = "<group>"; };
+		42264B66194FE04C000C6C85 /* DouBanAPIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouBanAPIKey.h; sourceTree = "<group>"; };
+		8A836136744B4B0CBF9E8CE9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E601C9C5C7B743D7821F4A3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 				42264B2C1945635A000C6C85 /* CoreGraphics.framework in Frameworks */,
 				42264B2E1945635A000C6C85 /* UIKit.framework in Frameworks */,
 				42264B2A1945635A000C6C85 /* Foundation.framework in Frameworks */,
+				5AF6019021FA42E880CFCD91 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +97,7 @@
 				42264B4E1945635A000C6C85 /* DouBanReadingTests */,
 				42264B281945635A000C6C85 /* Frameworks */,
 				42264B271945635A000C6C85 /* Products */,
+				8A836136744B4B0CBF9E8CE9 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +117,7 @@
 				42264B2B1945635A000C6C85 /* CoreGraphics.framework */,
 				42264B2D1945635A000C6C85 /* UIKit.framework */,
 				42264B481945635A000C6C85 /* XCTest.framework */,
+				E601C9C5C7B743D7821F4A3B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +131,8 @@
 				42264B3E1945635A000C6C85 /* ViewController.h */,
 				42264B3F1945635A000C6C85 /* ViewController.m */,
 				42264B411945635A000C6C85 /* Images.xcassets */,
+				42264B65194F4C61000C6C85 /* DouBanFetcher */,
+				42264B61194F4BD3000C6C85 /* CoreDataTableViewController */,
 				42264B301945635A000C6C85 /* Supporting Files */,
 			);
 			path = DouBanReading;
@@ -152,6 +167,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		42264B61194F4BD3000C6C85 /* CoreDataTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42264B5F194F4BB3000C6C85 /* CoreDataTableViewController.m */,
+				42264B5E194F4BB3000C6C85 /* CoreDataTableViewController.h */,
+			);
+			name = CoreDataTableViewController;
+			sourceTree = "<group>";
+		};
+		42264B65194F4C61000C6C85 /* DouBanFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				42264B62194F4C59000C6C85 /* DouBanFetcher.h */,
+				42264B63194F4C59000C6C85 /* DouBanFetcher.m */,
+				42264B66194FE04C000C6C85 /* DouBanAPIKey.h */,
+			);
+			name = DouBanFetcher;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42264B581945635A000C6C85 /* Build configuration list for PBXNativeTarget "DouBanReading" */;
 			buildPhases = (
+				62D0740FC0A04BC3807B8459 /* Check Pods Manifest.lock */,
 				42264B221945635A000C6C85 /* Sources */,
 				42264B231945635A000C6C85 /* Frameworks */,
 				42264B241945635A000C6C85 /* Resources */,
+				ABD8A249CB734075AB07514A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +280,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62D0740FC0A04BC3807B8459 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABD8A249CB734075AB07514A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		42264B221945635A000C6C85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -251,7 +320,9 @@
 			files = (
 				42264B401945635A000C6C85 /* ViewController.m in Sources */,
 				42264B3A1945635A000C6C85 /* AppDelegate.m in Sources */,
+				42264B60194F4BB3000C6C85 /* CoreDataTableViewController.m in Sources */,
 				42264B361945635A000C6C85 /* main.m in Sources */,
+				42264B64194F4C59000C6C85 /* DouBanFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +444,7 @@
 		};
 		42264B591945635A000C6C85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A836136744B4B0CBF9E8CE9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +458,7 @@
 		};
 		42264B5A1945635A000C6C85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A836136744B4B0CBF9E8CE9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +529,7 @@
 				42264B5A1945635A000C6C85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42264B5B1945635A000C6C85 /* Build configuration list for PBXNativeTarget "DouBanReadingTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +538,7 @@
 				42264B5D1945635A000C6C85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
