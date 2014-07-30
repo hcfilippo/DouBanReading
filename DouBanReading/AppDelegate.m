@@ -13,8 +13,61 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.document = self.document;
     return YES;
 }
+
+- (UIManagedDocument *)document
+{
+    if (!_document)
+    {
+        NSFileManager *filemanager = [NSFileManager defaultManager];
+        NSURL *documentsDirectory = [[filemanager URLsForDirectory:NSDocumentationDirectory inDomains:NSUserDomainMask] firstObject];
+        
+        BOOL isDir = NO;
+        BOOL isDirExist =[filemanager fileExistsAtPath:[documentsDirectory path] isDirectory:&isDir];
+        if(!(isDirExist && isDir))
+        {
+            BOOL bCreateDir = [filemanager createDirectoryAtPath:[documentsDirectory path]
+                                     withIntermediateDirectories:YES
+                                                      attributes:nil
+                                                           error:nil];
+            if(!bCreateDir){
+                NSLog(@"Create Directory Failed.");
+            }
+        }
+        
+        NSString *documentName = @"DouBanReadingDocument";
+        NSURL *url = [documentsDirectory URLByAppendingPathComponent:documentName];
+        
+        _document = [[UIManagedDocument alloc] initWithFileURL:url];
+        
+        NSLog(@"try to (open/create) document at %@",url);
+        
+        if ([filemanager fileExistsAtPath:[url path]])
+        {
+            [self.document openWithCompletionHandler:^(BOOL success) {
+                if (success)
+                {
+                    NSLog(@"file exist! open at %@", url);
+                }
+                else
+                    NSLog(@"couldn't open document at %@",url);
+            }];
+        } else {
+            [self.document saveToURL:url forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success) {
+                if (success)
+                {
+                    NSLog(@"create new file at %@", url);
+                }
+                else
+                    NSLog(@"couldn't create document at %@",url);
+            }];
+        }
+    }
+    return _document;
+}
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

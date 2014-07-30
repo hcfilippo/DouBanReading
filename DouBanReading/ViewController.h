@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (strong,nonatomic) NSDictionary *searchResult;
+@property (strong,nonatomic) NSString *searchText;
+@property (strong,nonatomic) NSManagedObjectContext *context;
+
 @end

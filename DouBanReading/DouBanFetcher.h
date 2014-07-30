@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DouBanAPIKey.h"
 
 @interface DouBanFetcher : NSObject
 
 + (NSURL *)URLforSearchText:(NSString *)text;
+
++ (NSURL *)URLforBookAnnotation:(NSInteger)bookID;
+
++ (NSURL *)URLWithAnnotationID:(NSInteger)annotationID;
 
 @end

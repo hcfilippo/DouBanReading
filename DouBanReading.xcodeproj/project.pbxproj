@@ -23,6 +23,13 @@
 		42264B551945635A000C6C85 /* DouBanReadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42264B541945635A000C6C85 /* DouBanReadingTests.m */; };
 		42264B60194F4BB3000C6C85 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42264B5F194F4BB3000C6C85 /* CoreDataTableViewController.m */; };
 		42264B64194F4C59000C6C85 /* DouBanFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42264B63194F4C59000C6C85 /* DouBanFetcher.m */; };
+		426B05631966C6AD001BBFBA /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B05621966C6AD001BBFBA /* Book.m */; };
+		42A0BB73196BE2A000FF717F /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A0BB72196BE2A000FF717F /* BookViewController.m */; };
+		42CD4293194FFD0B00DCC556 /* SearchResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD4292194FFD0B00DCC556 /* SearchResultTableViewController.m */; };
+		42CD42961950763500DCC556 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42CD42941950763500DCC556 /* Model.xcdatamodeld */; };
+		42CD429D1951D64400DCC556 /* BookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD429B1951D64400DCC556 /* BookTableViewCell.m */; };
+		42CD429E1951D64400DCC556 /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42CD429C1951D64400DCC556 /* BookTableViewCell.xib */; };
+		42CD42A2195528FE00DCC556 /* Book+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD42A1195528FE00DCC556 /* Book+Create.m */; };
 		5AF6019021FA42E880CFCD91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E601C9C5C7B743D7821F4A3B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +68,18 @@
 		42264B62194F4C59000C6C85 /* DouBanFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DouBanFetcher.h; sourceTree = "<group>"; };
 		42264B63194F4C59000C6C85 /* DouBanFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DouBanFetcher.m; sourceTree = "<group>"; };
 		42264B66194FE04C000C6C85 /* DouBanAPIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouBanAPIKey.h; sourceTree = "<group>"; };
+		426B05611966C6AD001BBFBA /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		426B05621966C6AD001BBFBA /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		42A0BB71196BE2A000FF717F /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		42A0BB72196BE2A000FF717F /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		42CD4291194FFD0B00DCC556 /* SearchResultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultTableViewController.h; sourceTree = "<group>"; };
+		42CD4292194FFD0B00DCC556 /* SearchResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableViewController.m; sourceTree = "<group>"; };
+		42CD42951950763500DCC556 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		42CD429A1951D64400DCC556 /* BookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookTableViewCell.h; sourceTree = "<group>"; };
+		42CD429B1951D64400DCC556 /* BookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTableViewCell.m; sourceTree = "<group>"; };
+		42CD429C1951D64400DCC556 /* BookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookTableViewCell.xib; sourceTree = "<group>"; };
+		42CD42A0195528FE00DCC556 /* Book+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Book+Create.h"; sourceTree = "<group>"; };
+		42CD42A1195528FE00DCC556 /* Book+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Book+Create.m"; sourceTree = "<group>"; };
 		8A836136744B4B0CBF9E8CE9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E601C9C5C7B743D7821F4A3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,9 +147,17 @@
 				42264B381945635A000C6C85 /* AppDelegate.h */,
 				42264B391945635A000C6C85 /* AppDelegate.m */,
 				42264B3B1945635A000C6C85 /* Main.storyboard */,
+				42CD429A1951D64400DCC556 /* BookTableViewCell.h */,
+				42CD429B1951D64400DCC556 /* BookTableViewCell.m */,
+				42CD429C1951D64400DCC556 /* BookTableViewCell.xib */,
 				42264B3E1945635A000C6C85 /* ViewController.h */,
 				42264B3F1945635A000C6C85 /* ViewController.m */,
+				42CD4291194FFD0B00DCC556 /* SearchResultTableViewController.h */,
+				42CD4292194FFD0B00DCC556 /* SearchResultTableViewController.m */,
+				42A0BB71196BE2A000FF717F /* BookViewController.h */,
+				42A0BB72196BE2A000FF717F /* BookViewController.m */,
 				42264B411945635A000C6C85 /* Images.xcassets */,
+				42CD429F1955289900DCC556 /* Model */,
 				42264B65194F4C61000C6C85 /* DouBanFetcher */,
 				42264B61194F4BD3000C6C85 /* CoreDataTableViewController */,
 				42264B301945635A000C6C85 /* Supporting Files */,
@@ -184,6 +211,18 @@
 				42264B66194FE04C000C6C85 /* DouBanAPIKey.h */,
 			);
 			name = DouBanFetcher;
+			sourceTree = "<group>";
+		};
+		42CD429F1955289900DCC556 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				426B05611966C6AD001BBFBA /* Book.h */,
+				426B05621966C6AD001BBFBA /* Book.m */,
+				42CD42941950763500DCC556 /* Model.xcdatamodeld */,
+				42CD42A0195528FE00DCC556 /* Book+Create.h */,
+				42CD42A1195528FE00DCC556 /* Book+Create.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CD429E1951D64400DCC556 /* BookTableViewCell.xib in Resources */,
 				42264B421945635A000C6C85 /* Images.xcassets in Resources */,
 				42264B341945635A000C6C85 /* InfoPlist.strings in Resources */,
 				42264B3D1945635A000C6C85 /* Main.storyboard in Resources */,
@@ -318,10 +358,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426B05631966C6AD001BBFBA /* Book.m in Sources */,
+				42CD4293194FFD0B00DCC556 /* SearchResultTableViewController.m in Sources */,
 				42264B401945635A000C6C85 /* ViewController.m in Sources */,
 				42264B3A1945635A000C6C85 /* AppDelegate.m in Sources */,
+				42CD42961950763500DCC556 /* Model.xcdatamodeld in Sources */,
+				42A0BB73196BE2A000FF717F /* BookViewController.m in Sources */,
 				42264B60194F4BB3000C6C85 /* CoreDataTableViewController.m in Sources */,
 				42264B361945635A000C6C85 /* main.m in Sources */,
+				42CD429D1951D64400DCC556 /* BookTableViewCell.m in Sources */,
+				42CD42A2195528FE00DCC556 /* Book+Create.m in Sources */,
 				42264B64194F4C59000C6C85 /* DouBanFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +587,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42CD42941950763500DCC556 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42CD42951950763500DCC556 /* Model.xcdatamodel */,
+			);
+			currentVersion = 42CD42951950763500DCC556 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 42264B1E1945635A000C6C85 /* Project object */;
 }
